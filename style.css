@@ -1,0 +1,187 @@
+body {
+    -moz-background-clip: 100%;   
+     color: #260b2b;
+    background-image: linear-gradient(to left, #f5f4ce, #e7d5f0, rgb(204, 204, 237), rgb(231, 181, 181));
+    animation: gradientAnimation 12s infinite;
+    /* Animation du dégradé */
+    background-size: 300% 300% background-position: 0% 50%;
+    /* Début du mouvement du dégradé */
+
+    50% background-position: 100% 50%;
+    /* Milieu du mouvement du dégradé */
+
+    100% background-position: 0% 50%;
+    /* Retour à la position initiale */
+
+    padding-left: 75px;
+    padding-right: 38px;
+    padding-top: 10px;
+
+
+    background-size: 300% 300%;
+    /* Taille du fond pour permettre le mouvement */
+
+
+}
+
+/* Définition de l'animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+        /* Début du mouvement du dégradé */
+    }
+
+    50% {
+        background-position: 100% 50%;
+        /* Milieu du mouvement du dégradé */
+    }
+
+    100% {
+        background-position: 0% 50%;
+        /* Retour à la position initiale */
+    }
+
+
+}
+
+header {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    / <uniquifier>: Use a unique and descriptive class name / <weight>: Use a value from 300 to 800 .funnel-display-<uniquifier> {
+        font-family: "Funnel Display", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 99px;
+    padding: 7px 14px;
+    background-color: #e7d5f0c7;
+    font-size: 1.1rem;
+    text-wrap: nowrap;
+    backdrop-filter: opacity(0.5);
+    box-shadow: 0 0 15px #730d4d1f;
+    a{
+       color: #67446dd6; 
+    }
+    a:hover {
+        color: #260b2b;
+    }
+
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+p {
+    font-size: 22px;
+}
+
+
+
+a {
+    padding: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn {
+    box-shadow: 0 0 11px #281e2d47;
+    background-color: #8E4EC6;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: white;
+
+    a:hover {
+        color: #ffffff;
+        /* Couleur survol */
+
+    }
+}
+
+button {
+
+    background-color: #e7d5f0;
+    /* Couleur du texte */
+    padding: 15px 32px;
+    /* Espacement interne */
+    text-align: center;
+    /* Alignement du texte */
+    text-decoration: none;
+    /* Enlever le souligné */
+    display: inline-block;
+    /* Style en ligne */
+    font-size: 16px;
+    /* Taille du texte */
+    border-radius: 8px;
+    /* Bords arrondis */
+    border: none;
+    /* Enlever la bordure par défaut */
+    cursor: pointer;
+}
+
+.projets {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    a{
+        padding: 0;
+    }
+
+    .project-card {
+        width: 400px;
+        text-align: center;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+h3,
+ul {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+    margin: inherit;
+}
+
+li {
+    background-color: #cedbe4;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+
+img {
+    width: 160px;
+    display: flex;
+    justify-content: end;
+}
