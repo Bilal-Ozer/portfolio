@@ -185,3 +185,18 @@ img {
     display: flex;
     justify-content: end;
 }
+form{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+    div{
+        display: flex;
+        margin-bottom: 9px;
+
+        label{
+            width: 86px;
+
+        }
+    }
+}
